@@ -14,5 +14,9 @@ The YOLOv5 model was trained on a tennis ball dataset to improve accuracy. A pre
 - numpy
 - opencv
 
+## Training
+Court Keypoints: https://colab.research.google.com/drive/16MkmNXu0NdCcdXJp5rWSTJtZuVSFXh85?usp=sharing
+Tennis ball: https://colab.research.google.com/drive/15ofSv04KmF1ZQ2tMo6uHJxTA_ENjo2qE?usp=sharing
+
 ## Example Snapshot
 ![image](https://github.com/user-attachments/assets/a1f6c173-a977-4719-9c7c-1c472f38e193)

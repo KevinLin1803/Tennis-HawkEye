@@ -20,7 +20,7 @@ def main():
 
     # Detect Players and Ball
     player_tracker = PlayerTracker(model_path='yolov8x')
-    ball_tracker = BallTracker(model_path='models/yolo5_last.pt')
+    ball_tracker = BallTracker(model_path='models/yolov5ball.pt')
 
     player_detections = player_tracker.detect_frames(video_frames,
                                                      read_from_stub=True,
@@ -119,8 +119,6 @@ def main():
     player_stats_data_df['player_2_average_shot_speed'] = player_stats_data_df['player_2_total_shot_speed']/player_stats_data_df['player_2_number_of_shots']
     player_stats_data_df['player_1_average_player_speed'] = player_stats_data_df['player_1_total_player_speed']/player_stats_data_df['player_2_number_of_shots']
     player_stats_data_df['player_2_average_player_speed'] = player_stats_data_df['player_2_total_player_speed']/player_stats_data_df['player_1_number_of_shots']
-
-    # 
     
     # Draw output
     ## Draw Player Bounding Boxes

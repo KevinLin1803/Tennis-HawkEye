@@ -12,7 +12,6 @@ import cv2
 import pandas as pd
 from copy import deepcopy
 
-
 def main():
     # Read Video
     input_video_path = "input_videos/input_video.mp4"
